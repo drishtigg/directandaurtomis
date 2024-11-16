@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SimbaTestSuite">
+    <test name="LoginTests">
+        <classes>
+            <class name="com.sample.test.LoginAPITest"/>
+            <class name="com.sample.test.LoginAndAutoEmailTest"/>
+        </classes>
+    </test>
+</suite>

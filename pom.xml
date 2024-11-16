@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sample</groupId>
+    <artifactId>my-project</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- Cucumber Java dependency -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.14.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Cucumber TestNG dependency -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>7.14.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- TestNG dependency -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.8.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- REST Assured dependency -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.3.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- JSON Path dependency for REST Assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-path</artifactId>
+            <version>5.3.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Google Authenticator dependency -->
+        <dependency>
+            <groupId>com.warrenstrange</groupId>
+            <artifactId>googleauth</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Maven Surefire Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M7</version>
+                <configuration>
+                    <includes>
+                        <include>com/sample/test/LoginAPITest.java</include>
+                        <include>com/sample/test/LoginAndAutoEmailTest.java</include>
+                    </includes>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
