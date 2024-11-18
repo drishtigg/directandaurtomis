@@ -4,6 +4,7 @@
         <classes>
             <class name="com.sample.test.LoginAPITest"/>
             <class name="com.sample.test.LoginAndAutoEmailTest"/>
+            <class name="com.sample.test.AutoEmailDashTest"/>
         </classes>
     </test>
 </suite>

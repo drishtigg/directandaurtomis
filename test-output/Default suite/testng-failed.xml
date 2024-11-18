@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.sample.test.LoginAndAutoEmailTest">
+      <class name="com.sample.test.AutoEmailDashTest">
         <methods>
-          <include name="setup"/>
-          <include name="testAutoEmailDashOperations" invocation-numbers="1 2"/>
+          <include name="testFetchAddUpdateDeleteAutoMail"/>
         </methods>
-      </class> <!-- com.sample.test.LoginAndAutoEmailTest -->
+      </class> <!-- com.sample.test.AutoEmailDashTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

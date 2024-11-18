@@ -7,34 +7,69 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import static io.restassured.RestAssured.given;
 
 public class LoginAndAutoEmailTest {
 
     private final String baseURI = "https://containersqa.verdis.ai:8801";
-    private final String at = "eyJhbGciOiJIUzI1NiJ9.NGIxZGE0YzktM2E2Ny00NjhjLTgwNDgtN2Q1MTY1N2YwNDA4.AlrQHY7kjhpoLHu7dOp7znDg4HMR7Y26scYhgPZk5hk";
-    private final String rt = "eyJhbGciOiJIUzI1NiJ9.ZDViZjg2ZjgtMWZmNy00MmJjLTg0Y2EtNzc5MmY5YjBmMmQ1.Oe4UXkYLvjFVf10xlWiGfCuh4tEg5H9TcyF8ce-KBa4";
-    private final String cookie = "x9218q34ghq0itv2ii=s%3AGoyF4iS2SxFv3PJ5EMKdVnS8HqgBaPVq.itGoJm2WyJb3su9oVCg29mz2Hhuu1RFxkPY9qWhzKkw; _dd_s=logs=1&id=96834e07-b24b-4f9e-8b69-b0b8f1a606f7&created=1731768665577&expire=1731769674848";
+    private String at="eyJhbGciOiJIUzI1NiJ9.ZDVlNWZkOTAtOWY2MC00NGJlLWEwYTAtM2NkNDZlMWFhOWI2.awzM-Mfa3DlXcbBLCMFKzdPgc4_eYF8KwWtac6AB1kM";
+    private String rt="eyJhbGciOiJIUzI1NiJ9.YzFjOTBjZWUtMWI1Yi00OTJiLWJiNmItYTA5MTM4ZTlkMWRi.QZdd0nBhHurvCweegNlwZ-6x-erTHhlP83QfvYAMteI";
+    private String cookie="x9218q34ghq0itv2ii=s%3Au4vS8RQZKGU0nbFkgSzedOfRmWTXU4iz.ce%2FdhKMqyZNcFmjdl%2F6O1GxPcCZ0uZxx%2F2jTMgZrRiw; _dd_s=logs=1&id=c9882fe4-64bc-4867-b5f6-57757bd74d76&created=1731919035642&expire=1731922380905";
 
     @BeforeClass
     public void setup() {
-        RestAssured.baseURI = baseURI;
+        RestAssured.baseURI = "https://containersqa.verdis.ai:8801/";
+
+        // Initial call to get session data
+        refreshSession();
+
+        // Schedule token refresh every 10 minutes
+        Timer timer = new Timer(true);
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                refreshSession();
+            }
+        }, 10 * 60 * 1000, 10 * 60 * 1000); // 10 minutes in milliseconds
     }
 
-    // Data provider to feed different optypes
+    private void refreshSession() {
+        Response response = given()
+            .header("accept", "application/json, text/plain, */*")
+            .header("accept-language", "en-US,en;q=0.9")
+            .header("content-type", "application/x-www-form-urlencoded; charset=UTF-8")
+            .header("origin", baseURI)
+            .header("referer", baseURI + "/")
+            .formParam("username", "i-drishti@verdis.ai") // Ensure valid credentials
+            .formParam("password", "Verdis@2044") // Ensure valid credentials
+            .when()
+            .post("/getIPData");
+
+        logResponseDetails("refreshSession", response);
+
+        Assert.assertEquals(response.getStatusCode(), 200, "Session refresh failed");
+
+        // Update session tokens and cookie
+        this.at = response.jsonPath().getString("at");
+        this.rt = response.jsonPath().getString("rt");
+        this.cookie = response.header("Set-Cookie"); // Update cookie if returned
+    }
+
     @DataProvider(name = "operationTypes")
     public Object[][] operationTypes() {
         return new Object[][]{
-            {"deleteAutomail", "e9a4535d-a0a9-49de-9c20-2361c50f970b", "null", "null"},
-            {"addAutomail", "null", "new-email@verdis.ai", "i-drishti@verdis.ai"},
-            {"updateAutomail", "e9a4535d-a0a9-49de-9c20-2361c50f970b", "updated-email@verdis.ai", "i-drishti@verdis.ai"},
+//            {"deleteAutomail", "2531cf4e-d529-435f-8b6d-cf8490c23421", "null", "null"},
+//            {"addAutomail", "null", "i-drishti@verdis.ai", "i-drishti@verdis.ai"},
+//            {"updateAutomail", "2531cf4e-d529-435f-8b6d-cf8490c23421", "i-drishti@verdis.ai", "i-drishti@verdis.ai"},
             {"fetchAutomail", "null", "null", "i-drishti@verdis.ai"}
         };
     }
 
     @Test(dataProvider = "operationTypes")
     public void testAutoEmailDashOperations(String optype, String misId, String email, String username) {
-        // Build the request dynamically based on optype
         Response response = given()
             .header("Accept", "application/json, text/plain, */*")
             .header("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8")
@@ -43,8 +78,8 @@ public class LoginAndAutoEmailTest {
             .formParam("rt", rt)
             .formParam("reqtype", "autoemaildash")
             .formParam("optype", optype)
-            .formParam("mis_id", misId)
-            .formParam("email", email)
+//            .formParam("mis_id", misId)
+//            .formParam("email", email)
             .formParam("username", username)
             .log().all()
             .when()
@@ -54,29 +89,13 @@ public class LoginAndAutoEmailTest {
 
         Assert.assertEquals(response.getStatusCode(), 200, "HTTP Status code mismatch for " + optype);
 
-        // Perform checks based on the optype
-        if ("deleteAutomail".equals(optype) || "updateAutomail".equals(optype) || "fetchAutomail".equals(optype)) {
-            Assert.assertTrue(response.jsonPath().getBoolean("status"), optype + " operation failed");
-        } else if ("addAutomail".equals(optype)) {
-            Assert.assertTrue(response.jsonPath().getBoolean("status"), "Add operation failed for " + optype);
-        }
+        // Validate response
+        Assert.assertTrue(response.jsonPath().getBoolean("status"), optype + " operation failed");
     }
 
-    /**
-     * Logs details of the response for better debugging
-     *
-     * @param operation The operation being tested
-     * @param response  The response object from the API call
-     */
     private void logResponseDetails(String operation, Response response) {
         System.out.println("===== " + operation + " Response Details =====");
         System.out.println("Status Code: " + response.getStatusCode());
         System.out.println("Response Body: " + response.asPrettyString());
-
-        if (response.getStatusCode() != 200) {
-            System.out.println("Error: Unexpected HTTP Status Code for " + operation);
-        } else if (!response.jsonPath().getBoolean("status")) {
-            System.out.println("Error: " + response.jsonPath().getString("errorMessage"));
-        }
     }
 }
