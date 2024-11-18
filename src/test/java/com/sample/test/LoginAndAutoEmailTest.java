@@ -12,9 +12,9 @@ import static io.restassured.RestAssured.given;
 public class LoginAndAutoEmailTest {
 
     private final String baseURI = "https://containersqa.verdis.ai:8801";
-    private final String at = "eyJhbGciOiJIUzI1NiJ9.NGIxZGE0YzktM2E2Ny00NjhjLTgwNDgtN2Q1MTY1N2YwNDA4.AlrQHY7kjhpoLHu7dOp7znDg4HMR7Y26scYhgPZk5hk";
-    private final String rt = "eyJhbGciOiJIUzI1NiJ9.ZDViZjg2ZjgtMWZmNy00MmJjLTg0Y2EtNzc5MmY5YjBmMmQ1.Oe4UXkYLvjFVf10xlWiGfCuh4tEg5H9TcyF8ce-KBa4";
-    private final String cookie = "x9218q34ghq0itv2ii=s%3AGoyF4iS2SxFv3PJ5EMKdVnS8HqgBaPVq.itGoJm2WyJb3su9oVCg29mz2Hhuu1RFxkPY9qWhzKkw; _dd_s=logs=1&id=96834e07-b24b-4f9e-8b69-b0b8f1a606f7&created=1731768665577&expire=1731769674848";
+    private final String at = "eyJhbGciOiJIUzI1NiJ9.OWNiNzg4MjEtM2VhZS00YmFiLWIxMDQtMWZlMmMwOGIxZWRl.Rd5yeSxYG_5s9KIZ1m5347nqlWGEHzHaLPlrY8lKZEY";
+    private final String rt = "eyJhbGciOiJIUzI1NiJ9.ZjFjNDQ3NmItMTJjYS00NzU0LTlhMDgtMjNjYTYyZDgxY2Y5.gmXgyc_0dpMxkCKa8ppcmMGPB3Ph38DxXZUYqsB-A8A";
+    private final String cookie = "x9218q34ghq0itv2ii=s%3Au4vS8RQZKGU0nbFkgSzedOfRmWTXU4iz.ce%2FdhKMqyZNcFmjdl%2F6O1GxPcCZ0uZxx%2F2jTMgZrRiw; _dd_s=logs=1&id=898bd22b-6704-48d6-89b4-870072585b3f&created=1731909496472&expire=1731910594635\r\n";
 
     @BeforeClass
     public void setup() {
