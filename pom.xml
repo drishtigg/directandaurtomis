@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sample</groupId>
@@ -54,7 +54,6 @@
             <artifactId>googleauth</artifactId>
             <version>1.4.0</version>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -67,13 +66,27 @@
                 <configuration>
                     <includes>
                         <include>com/sample/test/LoginAPITest.java</include>
-                        <include>com/sample/test/LoginAndAutoEmailTest.java</include>
+                        <include>com/sample/test/AutoEmailDash.java</include>
                     </includes>
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
+
+           <!-- Maven JAR Plugin -->
+       <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.1.0</version> <!-- You can use the latest version -->
+            <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>com.sample.test.AutoEmailDashTest</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
         </plugins>
     </build>
 </project>

@@ -2,12 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-18T17:59:47 IST" name="Default suite" finished-at="2024-11-18T17:59:50 IST" duration-ms="3395">
+  <suite started-at="2024-11-21T12:11:53 IST" name="Default suite" finished-at="2024-11-21T12:11:57 IST" duration-ms="3655">
     <groups>
     </groups>
-    <test started-at="2024-11-18T17:59:47 IST" name="Default test" finished-at="2024-11-18T17:59:50 IST" duration-ms="3395">
+    <test started-at="2024-11-21T12:11:53 IST" name="Default test" finished-at="2024-11-21T12:11:57 IST" duration-ms="3655">
       <class name="com.sample.test.AutoEmailDashTest">
-        <test-method signature="testFetchAddUpdateDeleteAutoMail()[pri:0, instance:com.sample.test.AutoEmailDashTest@222545dc]" started-at="2024-11-18T17:59:47 IST" name="testFetchAddUpdateDeleteAutoMail" finished-at="2024-11-18T17:59:50 IST" duration-ms="3362" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.sample.test.AutoEmailDashTest@6d3c5255]" started-at="2024-11-21T12:11:53 IST" name="login" finished-at="2024-11-21T12:11:56 IST" duration-ms="2649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="testFetchAddUpdateDeleteAutoMail()[pri:0, instance:com.sample.test.AutoEmailDashTest@6d3c5255]" started-at="2024-11-21T12:11:56 IST" name="testFetchAddUpdateDeleteAutoMail" finished-at="2024-11-21T12:11:57 IST" duration-ms="964" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFetchAddUpdateDeleteAutoMail -->

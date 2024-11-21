@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="5.152" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Drishti\Desktop\my-project\target\test-classes;C:\Users\Drishti\Desktop\my-project\target\classes;C:\Users\Drishti\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\Drishti\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\Drishti\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\Drishti\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Drishti\.m2\repository\io\cucumber\cucumber-testng\7.14.0\cucumber-testng-7.14.0.jar;C:\Users\Drishti\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Drishti\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Drishti\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Drishti\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Drishti\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\Drishti\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\Drishti\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\Drishti\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Drishti\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Drishti\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Drishti\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Drishti\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Drishti\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Drishti\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\Drishti\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Drishti\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\Drishti\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\Drishti\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\Drishti\.m2\repository\com\warrenstrange\googleauth\1.4.0\googleauth-1.4.0.jar;C:\Users\Drishti\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
+    <property name="sun.java.command" value="C:\Users\Drishti\AppData\Local\Temp\surefire8292940417246278593\surefirebooter-20241121121259862_3.jar C:\Users\Drishti\AppData\Local\Temp\surefire8292940417246278593 2024-11-21T12-12-58_603-jvmRun1 surefire-20241121121259862_1tmp surefire_0-20241121121259862_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Drishti\Desktop\my-project\target\test-classes;C:\Users\Drishti\Desktop\my-project\target\classes;C:\Users\Drishti\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\Drishti\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\Drishti\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\Drishti\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\Drishti\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Drishti\.m2\repository\io\cucumber\cucumber-testng\7.14.0\cucumber-testng-7.14.0.jar;C:\Users\Drishti\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Drishti\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Drishti\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Drishti\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Drishti\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\Drishti\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\Drishti\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\Drishti\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Drishti\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Drishti\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Drishti\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Drishti\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Drishti\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Drishti\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\Drishti\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Drishti\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\Drishti\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\Drishti\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\Drishti\.m2\repository\com\warrenstrange\googleauth\1.4.0\googleauth-1.4.0.jar;C:\Users\Drishti\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Drishti"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-23"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Drishti\Desktop\my-project"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Drishti\AppData\Local\Temp\surefire8292940417246278593\surefirebooter-20241121121259862_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23.0.1+11-39"/>
+    <property name="user.name" value="Drishti"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Drishti\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Drishti\AppData\Local\Temp\"/>
+    <property name="java.version" value="23.0.1"/>
+    <property name="user.dir" value="C:\Users\Drishti\Desktop\my-project"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-23\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\maven\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Java\jdk-23\bin;C:\Users\Drishti\AppData\Local\Microsoft\WindowsApps;C:\Users\Drishti\AppData\Local\Programs\Git\cmd;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23.0.1+11-39"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="testDirectLogin" classname="com.sample.test.LoginAPITest" time="2.537">
+    <system-out><![CDATA[Sending direct login request...
+Response for Direct Login: 
+{
+    "status": true,
+    "ecode": 701,
+    "at": "eyJhbGciOiJIUzI1NiJ9.NGJmYzU2ZWQtN2Y4MC00MjNjLWI2MmEtZjdhNTE5NDJkMGUw.FB_i3bE6NyywPGnWAQ6aja75LB2hBK6_b1cpYpb_lT4",
+    "rt": "eyJhbGciOiJIUzI1NiJ9.Yzk5Y2RkZmEtOGY3YS00ZjhjLTg4ZGEtODhiY2Q4ZTVlMWFi.CSt1EVcMWfsP7xisqpEeDL2W6x6cdQ48EUEwfCcSDCQ",
+    "userdetails": {
+        "firstname": "Drishti",
+        "lastname": "Gautam",
+        "salutationprefix": "",
+        "salutationpostfix": "San",
+        "mobile": "919871111595",
+        "email": "i-drishti@verdis.ai",
+        "department": "All",
+        "dsname_alias": "SIMBA",
+        "user_level_filters": {
+            "myview": {
+                "plant": [
+                    "1F-PMB",
+                    "1F",
+                    "2F",
+                    "3F",
+                    "4F",
+                    "ROE1",
+                    "WHGW",
+                    "WHDH"
+                ]
+            }
+        }
+    },
+    "dsvalue": "newton",
+    "viewLicensed": {
+        "scmltview": true,
+        "sdmmoduleview": true,
+        "myview": true,
+        "profileview": true,
+        "alert": true,
+        "scnp": true,
+        "sobexecution": true,
+        "approvalmanagement": true,
+        "approvalview": true,
+        "sequenceview": true,
+        "showsobfileview": true,
+        "transportsectionview": true,
+        "slabapprovalmanagement": true,
+        "slabplanning": true
+    },
+    "module_license_master": {
+        "scmltview": {
+            "name": "CXO Insights",
+            "short_name": "CXO",
+            "description": "'CXO Insights' refers to the strategic perspective and decision-making of top-level executives, focusing on customer experience, business strategies, and market trends. It involves aligning customer experience with organizational goals and making informed decisions to drive growth and enhance customer satisfaction. It provides a high-level view that shapes the organization's direction and priorities.",
+            "display_name": "Lorem ipsum",
+            "license_type": "bi",
+            "parent_license": "scmltview"
+        },
+        "myview": {
+            "name": "Dashboard",
+            "short_name": "Dashboard",
+            "description": "The dashboard module provides a visual interface displaying key performance indicators, metrics, and real-time data in a concise and accessible format. It enables users to monitor and analyze performance, track progress towards goals, and make data-driven decisions for improved operational efficiency and business insights.",
+            "display_name": "Lorem ipsum",
+            "license_type": "bi",
+            "parent_license": "myview"
+        },
+        "milogistics": {
+            "name": "Manual Uploads Logistics",
+            "short_name": "Manual Uploads",
+            "description": "The Manual Uploads module allows users to manually upload and input data into a system. It provides a user-friendly interface for importing files or entering data directly, ensuring accuracy and completeness of information. This module simplifies data entry processes and facilitates integration of external data sources into the system.",
+            "display_name": "Lorem ipsum",
+            "license_type": "bi",
+            "parent_license": "milogistics"
+        },
+        "mchatview": {
+            "name": "Verdis Chat",
+            "short_name": "V-Chat",
+            "description": "The V-Chat module provides an automated conversational interface for users to interact and obtain information or assistance. It uses artificial intelligence to understand and respond to user queries, offering personalized support, recommendations, and streamlined interactions to enhance user experience and improve customer service.",
+            "display_name": "Lorem ipsum",
+            "license_type": "ai",
+            "parent_license": "mchatview"
+        },
+        "alert": {
+            "name": "Alerts",
+            "short_name": "Alerts",
+            "description": "The Alerts module provides real-time notifications and alerts to users based on predefined triggers or events. It ensures timely communication of important information, such as critical system updates, task deadlines, or deviations from set thresholds. This module enhances proactive decision-making and enables users to stay informed and responsive to key events.",
+            "display_name": "Lorem ipsum",
+            "license_type": "bi",
+            "parent_license": "alert"
+        },
+        "mrp": {
+            "name": "Material Receipt Planning",
+            "short_name": "MRP",
+            "description": "The sales distribution planning module optimizes vehicle allocation based on market demand, production capacity, and sales performance, enabling manufacturers and dealerships to maximize profitability, minimize inventory imbalances, and improve customer satisfaction.",
+            "parent_license": "scnp",
+            "display_name": "Lorem ipsum",
+            "version": "1.0",
+            "license_type": "ai"
+        },
+        "ps": {
+            "name": "Production Scheduling",
+            "short_name": "PS",
+            "description": "The sales distribution planning module optimizes vehicle allocation based on market demand, production capacity, and sales performance, enabling manufacturers and dealerships to maximize profitability, minimize inventory imbalances, and improve customer satisfaction.",
+            "parent_license": "scnp",
+            "display_name": "Lorem ipsum",
+            "version": "1.0",
+            "license_type": "ai"
+        },
+        "ppc": {
+            "name": "Production Planning and Control",
+            "short_name": "PPC",
+            "description": "The sales distribution planning module optimizes vehicle allocation based on market demand, production capacity, and sales performance, enabling manufacturers and dealerships to maximize profitability, minimize inventory imbalances, and improve customer satisfaction.",
+            "parent_license": "scnp",
+            "display_name": "Lorem ipsum",
+            "version": "1.0",
+            "license_type": "ai"
+        },
+        "rap": {
+            "name": "Replenishment Allocation Planning",
+            "short_name": "RAP",
+            "description": "The sales distribution planning module optimizes vehicle allocation based on market demand, production capacity, and sales performance, enabling manufacturers and dealerships to maximize profitability, minimize inventory imbalances, and improve customer satisfaction.",
+            "display_name": "Lorem ipsum",
+            "version": "1.0",
+            "license_type": "ai",
+            "parent_license": "scnp"
+        },
+        "accessmanagementview": {
+            "name": "Access Management",
+            "short_name": "Access Management",
+            "description": "The sales distribution planning module optimizes vehicle allocation based on market demand, production capacity, and sales performance, enabling manufacturers and dealerships to maximize profitability, minimize inventory imbalances, and improve customer satisfaction.",
+            "display_name": "Lorem ipsum",
+            "version": "1.0",
+            "license_type": "ai",
+            "parent_license": "accessmanagementview"
+        }
+    }
+}
+AT Token: eyJhbGciOiJIUzI1NiJ9.NGJmYzU2ZWQtN2Y4MC00MjNjLWI2MmEtZjdhNTE5NDJkMGUw.FB_i3bE6NyywPGnWAQ6aja75LB2hBK6_b1cpYpb_lT4
+RT Token: eyJhbGciOiJIUzI1NiJ9.Yzk5Y2RkZmEtOGY3YS00ZjhjLTg4ZGEtODhiY2Q4ZTVlMWFi.CSt1EVcMWfsP7xisqpEeDL2W6x6cdQ48EUEwfCcSDCQ
+Direct Login successful!
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testFetchAddUpdateDeleteAutoMail" classname="com.sample.test.AutoEmailDashTest" time="1.024">
+    <system-out><![CDATA[Login Response: 
+{
+    "status": true,
+    "ecode": 701,
+    "at": "eyJhbGciOiJIUzI1NiJ9.N2M4ZjRmN2MtYzcwNi00NDQ0LThlNjQtMjVmOWQ1YjhkODUz.xWkbAciXOTmf8C9_iOD8Y-amKFG39VLW-9AKdTVCEqk",
+    "rt": "eyJhbGciOiJIUzI1NiJ9.M2NlNzhjMmYtYjJlNi00MTgwLWI4ZDUtMGI3ZmJhOTA5M2Iz.ldCrdf1a34sNZNbsH51UrpNb39BZvgY_q77e7p2LC1c",
+    "userdetails": {
+        "firstname": "Drishti",
+        "lastname": "Gautam",
+        "salutationprefix": "",
+        "salutationpostfix": "San",
+        "mobile": "919871111595",
+        "email": "i-drishti@verdis.ai",
+        "department": "All",
+        "dsname_alias": "SIMBA",
+        "user_level_filters": {
+            "myview": {
+                "plant": [
+                    "1F-PMB",
+                    "1F",
+                    "2F",
+                    "3F",
+                    "4F",
+                    "ROE1",
+                    "WHGW",
+                    "WHDH"
+                ]
+            }
+        }
+    },
+    "dsvalue": "newton",
+    "viewLicensed": {
+        "scmltview": true,
+        "sdmmoduleview": true,
+        "myview": true,
+        "profileview": true,
+        "alert": true,
+        "scnp": true,
+        "sobexecution": true,
+        "approvalmanagement": true,
+        "approvalview": true,
+        "sequenceview": true,
+        "showsobfileview": true,
+        "transportsectionview": true,
+        "slabapprovalmanagement": true,
+        "slabplanning": true
+    },
+    "module_license_master": {
+        "scmltview": {
+            "name": "CXO Insights",
+            "short_name": "CXO",
+            "description": "'CXO Insights' refers to the strategic perspective and decision-making of top-level executives, focusing on customer experience, business strategies, and market trends. It involves aligning customer experience with organizational goals and making informed decisions to drive growth and enhance customer satisfaction. It provides a high-level view that shapes the organization's direction and priorities.",
+            "display_name": "Lorem ipsum",
+            "license_type": "bi",
+            "parent_license": "scmltview"
+        },
+        "myview": {
+            "name": "Dashboard",
+            "short_name": "Dashboard",
+            "description": "The dashboard module provides a visual interface displaying key performance indicators, metrics, and real-time data in a concise and accessible format. It enables users to monitor and analyze performance, track progress towards goals, and make data-driven decisions for improved operational efficiency and business insights.",
+            "display_name": "Lorem ipsum",
+            "license_type": "bi",
+            "parent_license": "myview"
+        },
+        "milogistics": {
+            "name": "Manual Uploads Logistics",
+            "short_name": "Manual Uploads",
+            "description": "The Manual Uploads module allows users to manually upload and input data into a system. It provides a user-friendly interface for importing files or entering data directly, ensuring accuracy and completeness of information. This module simplifies data entry processes and facilitates integration of external data sources into the system.",
+            "display_name": "Lorem ipsum",
+            "license_type": "bi",
+            "parent_license": "milogistics"
+        },
+        "mchatview": {
+            "name": "Verdis Chat",
+            "short_name": "V-Chat",
+            "description": "The V-Chat module provides an automated conversational interface for users to interact and obtain information or assistance. It uses artificial intelligence to understand and respond to user queries, offering personalized support, recommendations, and streamlined interactions to enhance user experience and improve customer service.",
+            "display_name": "Lorem ipsum",
+            "license_type": "ai",
+            "parent_license": "mchatview"
+        },
+        "alert": {
+            "name": "Alerts",
+            "short_name": "Alerts",
+            "description": "The Alerts module provides real-time notifications and alerts to users based on predefined triggers or events. It ensures timely communication of important information, such as critical system updates, task deadlines, or deviations from set thresholds. This module enhances proactive decision-making and enables users to stay informed and responsive to key events.",
+            "display_name": "Lorem ipsum",
+            "license_type": "bi",
+            "parent_license": "alert"
+        },
+        "mrp": {
+            "name": "Material Receipt Planning",
+            "short_name": "MRP",
+            "description": "The sales distribution planning module optimizes vehicle allocation based on market demand, production capacity, and sales performance, enabling manufacturers and dealerships to maximize profitability, minimize inventory imbalances, and improve customer satisfaction.",
+            "parent_license": "scnp",
+            "display_name": "Lorem ipsum",
+            "version": "1.0",
+            "license_type": "ai"
+        },
+        "ps": {
+            "name": "Production Scheduling",
+            "short_name": "PS",
+            "description": "The sales distribution planning module optimizes vehicle allocation based on market demand, production capacity, and sales performance, enabling manufacturers and dealerships to maximize profitability, minimize inventory imbalances, and improve customer satisfaction.",
+            "parent_license": "scnp",
+            "display_name": "Lorem ipsum",
+            "version": "1.0",
+            "license_type": "ai"
+        },
+        "ppc": {
+            "name": "Production Planning and Control",
+            "short_name": "PPC",
+            "description": "The sales distribution planning module optimizes vehicle allocation based on market demand, production capacity, and sales performance, enabling manufacturers and dealerships to maximize profitability, minimize inventory imbalances, and improve customer satisfaction.",
+            "parent_license": "scnp",
+            "display_name": "Lorem ipsum",
+            "version": "1.0",
+            "license_type": "ai"
+        },
+        "rap": {
+            "name": "Replenishment Allocation Planning",
+            "short_name": "RAP",
+            "description": "The sales distribution planning module optimizes vehicle allocation based on market demand, production capacity, and sales performance, enabling manufacturers and dealerships to maximize profitability, minimize inventory imbalances, and improve customer satisfaction.",
+            "display_name": "Lorem ipsum",
+            "version": "1.0",
+            "license_type": "ai",
+            "parent_license": "scnp"
+        },
+        "accessmanagementview": {
+            "name": "Access Management",
+            "short_name": "Access Management",
+            "description": "The sales distribution planning module optimizes vehicle allocation based on market demand, production capacity, and sales performance, enabling manufacturers and dealerships to maximize profitability, minimize inventory imbalances, and improve customer satisfaction.",
+            "display_name": "Lorem ipsum",
+            "version": "1.0",
+            "license_type": "ai",
+            "parent_license": "accessmanagementview"
+        }
+    }
+}
+Access Token (AT): eyJhbGciOiJIUzI1NiJ9.N2M4ZjRmN2MtYzcwNi00NDQ0LThlNjQtMjVmOWQ1YjhkODUz.xWkbAciXOTmf8C9_iOD8Y-amKFG39VLW-9AKdTVCEqk
+Refresh Token (RT): eyJhbGciOiJIUzI1NiJ9.M2NlNzhjMmYtYjJlNi00MTgwLWI4ZDUtMGI3ZmJhOTA5M2Iz.ldCrdf1a34sNZNbsH51UrpNb39BZvgY_q77e7p2LC1c
+Fetch Response: {"status":true,"misList":[{"_id":"6729ce679c2e291186f508c9","mis_id":"c2b2090d-bda4-4bff-a8c8-685e2c09337c","misName":"Test05","misDescription":"","username":"i-drishti@verdis.ai","emailProperties":{"to":["i-drishti@verdis.ai"],"subject":"test","mailContent":"test","mergeTable":"false"},"DSName":"newton","schedulerProperties":[{"type":"custom","on":"4","at":"11:05 - 11:10"},{"type":"custom","on":"5","at":"11:25 - 11:30"},{"type":"customHours","from":"11:45 - 11:50","to":"11:55 - 12:00","hourlyFrequency":"1"},{"type":"custom","on":"5","at":"12:35 - 12:40"},{"type":"custom","on":"5","at":"12:45 - 12:50"},{"type":"custom","on":"5","at":"13:10 - 13:15"},{"type":"custom","on":"5","at":"13:25 - 13:30"}],"createdAt":"5/11/2024, 10:56:25 am","lastUpdatedAt":"5/11/2024, 1:21:03 pm","elementsArray":[{"label":"Manufacturing Year-wise Total Fleet Count","type":"chart","viqWrapper":{"depth":"%1","numIP":"1","viq":[{"UVName":"truck_master","filter":{"DATERANGE":{"START":"2024-01-01","END":"2024-12-01","HEAD":"SIMBAMASTER-04-TRCK__vds-created_Date"}},"Col1":{"disabled":"false","ColType":"Cat","Colname":"SIMBAMASTER-04-TRCK_Year_vds-b_of_vds-b_Manufacturing","ColnameDE":"Year of Manufacturing","UVName":"truck_master"},"yCol1":{"UVName":"truck_master","Colname":"CountDistinct SIMBAMASTER-04-TRCK_Truck_vds-b_Number","ColType":"Cont","ColnameDE":"Count Of Truck Number"}}],"feRecoWrapper":{"chartTitle":"Manufacturing Year-wise Total Fleet Count","complexity":"basic","reportdate":"2024-04-18 18:39:55","chartFormat":{"charttype":"Bar","flagtext":"1"},"showslicedicecomp":"1","sort":{"isDescending":"false","labelSort":"true","chSet":"0"}},"at":"eyJhbGciOiJIUzI1NiJ9.YjViZDllMjAtZTI2Zi00NDBmLTljY2ItNjI5NzU2ZDg5NGNi.dbBxaPw6BkkjPZTfvLNxh15C8DJUhk9P0LIo5GTrD9M","rt":"eyJhbGciOiJIUzI1NiJ9.MDY3ZmY1Y2EtMDgzOC00Yzk1LThmN2EtNjVhNTI2M2JlMmEx.rQZnRXPLNCMzYh--CJC7zPRqXGOoyZ2nh7tvJv0bk-k"},"id":"5","showPreview":"true","showAttachment":"false"},{"label":"Vendor-wise Total Fleet Count","type":"chart","viqWrapper":{"depth":"%1","numIP":"1","viq":[{"UVName":"truck_master","filter":{"DATERANGE":{"START":"2024-01-01","END":"2024-12-01","HEAD":"SIMBAMASTER-04-TRCK__vds-created_Date"}},"Col1":{"disabled":"false","ColType":"Cat","Colname":"SIMBAMASTER-22_Transporter_vds-b_Name_vds-b_Alias","ColnameDE":"Transporter Name","UVName":"truck_master"},"yCol1":{"UVName":"truck_master","Colname":"CountDistinct SIMBAMASTER-04-TRCK_Truck_vds-b_Number","ColType":"Cont","ColnameDE":"Count Of Truck Number"}}],"feRecoWrapper":{"chartTitle":"Vendor-wise Total Fleet Count","complexity":"basic","reportdate":"2024-04-18 18:36:39","chartFormat":{"charttype":"Bar","flagtext":"2"},"showslicedicecomp":"1","sort":{"isDescending":"false","labelSort":"true","chSet":"0"}},"at":"eyJhbGciOiJIUzI1NiJ9.YjViZDllMjAtZTI2Zi00NDBmLTljY2ItNjI5NzU2ZDg5NGNi.dbBxaPw6BkkjPZTfvLNxh15C8DJUhk9P0LIo5GTrD9M","rt":"eyJhbGciOiJIUzI1NiJ9.MDY3ZmY1Y2EtMDgzOC00Yzk1LThmN2EtNjVhNTI2M2JlMmEx.rQZnRXPLNCMzYh--CJC7zPRqXGOoyZ2nh7tvJv0bk-k"},"id":"4","showPreview":"true","showAttachment":"false"},{"label":"Emission-wise Total Fleet Count","type":"chart","viqWrapper":{"depth":"%1","numIP":"1","viq":[{"UVName":"truck_master","filter":{"DATERANGE":{"START":"2024-01-01","END":"2024-12-01","HEAD":"SIMBAMASTER-04-TRCK__vds-created_Date"}},"Col1":{"UVName":"truck_master","Colname":"SIMBAMASTER-04-TRCK_Emission","ColType":"Cat","ColnameDE":"Fleet Type"},"yCol1":{"UVName":"truck_master","Colname":"CountDistinct SIMBAMASTER-04-TRCK_Truck_vds-b_Number","ColType":"Cont","ColnameDE":"Count Of Truck Number"}}],"feRecoWrapper":{"chartTitle":"Emission-wise Total Fleet Count","complexity":"basic","reportdate":"2024-04-18 18:51:01","chartFormat":{"charttype":"Bar","flagtext":"1"},"showslicedicecomp":"1"},"at":"eyJhbGciOiJIUzI1NiJ9.YjViZDllMjAtZTI2Zi00NDBmLTljY2ItNjI5NzU2ZDg5NGNi.dbBxaPw6BkkjPZTfvLNxh15C8DJUhk9P0LIo5GTrD9M","rt":"eyJhbGciOiJIUzI1NiJ9.MDY3ZmY1Y2EtMDgzOC00Yzk1LThmN2EtNjVhNTI2M2JlMmEx.rQZnRXPLNCMzYh--CJC7zPRqXGOoyZ2nh7tvJv0bk-k"},"id":"7","showPreview":"true","showAttachment":"false"},{"label":"Aging-wise Total Fleet Count","type":"chart","viqWrapper":{"depth":"%1","numIP":"1","viq":[{"UVName":"truck_master","filter":{"DATERANGE":{"START":"2024-01-01","END":"2024-12-01","HEAD":"SIMBAMASTER-04-TRCK__vds-created_Date"}},"Col1":{"disabled":"false","ColType":"Cat","Colname":"SIMBAMASTER-04-TRCK_Ageing","ColnameDE":"Ageing","UVName":"truck_master"},"yCol1":{"UVName":"truck_master","Colname":"CountDistinct SIMBAMASTER-04-TRCK_Truck_vds-b_Number","ColType":"Cont","ColnameDE":"Count Of Truck Number"}}],"feRecoWrapper":{"chartTitle":"Aging-wise Total Fleet Count","complexity":"basic","reportdate":"2024-04-18 18:48:03","chartFormat":{"charttype":"Bar","flagtext":"1"},"showslicedicecomp":"1","sort":{"isDescending":"false","labelSort":"true","chSet":"0"}},"at":"eyJhbGciOiJIUzI1NiJ9.YjViZDllMjAtZTI2Zi00NDBmLTljY2ItNjI5NzU2ZDg5NGNi.dbBxaPw6BkkjPZTfvLNxh15C8DJUhk9P0LIo5GTrD9M","rt":"eyJhbGciOiJIUzI1NiJ9.MDY3ZmY1Y2EtMDgzOC00Yzk1LThmN2EtNjVhNTI2M2JlMmEx.rQZnRXPLNCMzYh--CJC7zPRqXGOoyZ2nh7tvJv0bk-k"},"id":"6","showPreview":"true","showAttachment":"false"}]},{"_id":"6729d1de9c2e291186f508fa","mis_id":"200d3c16-7e2a-41da-be47-f53c77e84fde","misName":"test","misDescription":"","username":"i-drishti@verdis.ai","emailProperties":{"to":["prashant@verdis.ai","i-drishti@verdis.ai"],"subject":"test","mailContent":"test","mergeTable":"false"},"DSName":"newton","schedulerProperties":[{"type":"custom","on":"4","at":"16:30 - 16:35"},{"type":"custom","on":"4","at":"17:45 - 17:50"},{"type":"custom","on":"5","at":"13:30 - 13:35"}],"createdAt":"4/11/2024, 4:26:01 pm","lastUpdatedAt":"5/11/2024, 1:35:50 pm","elementsArray":[{"label":"Manufacturing Year-wise Total Fleet Count","type":"chart","viqWrapper":{"depth":"%1","numIP":"1","viq":[{"UVName":"truck_master","filter":{"DATERANGE":{"START":"2024-01-01","END":"2024-12-01","HEAD":"SIMBAMASTER-04-TRCK__vds-created_Date"}},"Col1":{"disabled":"false","ColType":"Cat","Colname":"SIMBAMASTER-04-TRCK_Year_vds-b_of_vds-b_Manufacturing","ColnameDE":"Year of Manufacturing","UVName":"truck_master"},"yCol1":{"UVName":"truck_master","Colname":"CountDistinct SIMBAMASTER-04-TRCK_Truck_vds-b_Number","ColType":"Cont","ColnameDE":"Count Of Truck Number"}}],"feRecoWrapper":{"chartTitle":"Manufacturing Year-wise Total Fleet Count","complexity":"basic","reportdate":"2024-04-18 18:39:55","chartFormat":{"charttype":"Bar","flagtext":"1"},"showslicedicecomp":"1","sort":{"isDescending":"false","labelSort":"true","chSet":"0"}},"at":"eyJhbGciOiJIUzI1NiJ9.YjViZDllMjAtZTI2Zi00NDBmLTljY2ItNjI5NzU2ZDg5NGNi.dbBxaPw6BkkjPZTfvLNxh15C8DJUhk9P0LIo5GTrD9M","rt":"eyJhbGciOiJIUzI1NiJ9.MDY3ZmY1Y2EtMDgzOC00Yzk1LThmN2EtNjVhNTI2M2JlMmEx.rQZnRXPLNCMzYh--CJC7zPRqXGOoyZ2nh7tvJv0bk-k"},"id":"5","showPreview":"true","showAttachment":"false"},{"label":"Vendor-wise Total Fleet Count","type":"chart","viqWrapper":{"depth":"%1","numIP":"1","viq":[{"UVName":"truck_master","filter":{"DATERANGE":{"START":"2024-01-01","END":"2024-12-01","HEAD":"SIMBAMASTER-04-TRCK__vds-created_Date"}},"Col1":{"disabled":"false","ColType":"Cat","Colname":"SIMBAMASTER-22_Transporter_vds-b_Name_vds-b_Alias","ColnameDE":"Transporter Name","UVName":"truck_master"},"yCol1":{"UVName":"truck_master","Colname":"CountDistinct SIMBAMASTER-04-TRCK_Truck_vds-b_Number","ColType":"Cont","ColnameDE":"Count Of Truck Number"}}],"feRecoWrapper":{"chartTitle":"Vendor-wise Total Fleet Count","complexity":"basic","reportdate":"2024-04-18 18:36:39","chartFormat":{"charttype":"Bar","flagtext":"2"},"showslicedicecomp":"1","sort":{"isDescending":"false","labelSort":"true","chSet":"0"}},"at":"eyJhbGciOiJIUzI1NiJ9.YjViZDllMjAtZTI2Zi00NDBmLTljY2ItNjI5NzU2ZDg5NGNi.dbBxaPw6BkkjPZTfvLNxh15C8DJUhk9P0LIo5GTrD9M","rt":"eyJhbGciOiJIUzI1NiJ9.MDY3ZmY1Y2EtMDgzOC00Yzk1LThmN2EtNjVhNTI2M2JlMmEx.rQZnRXPLNCMzYh--CJC7zPRqXGOoyZ2nh7tvJv0bk-k"},"id":"4","showPreview":"true","showAttachment":"false"}]},{"_id":"6729e0869c2e291186f50913","mis_id":"4fd552e3-d142-440b-882a-adc096d52206","misName":"TestAuth","misDescription":"","username":"i-drishti@verdis.ai","emailProperties":{"to":["i-drishti@verdis.ai","prashant@verdis.ai"],"subject":"testauth","mailContent":"testauth","mergeTable":"false"},"DSName":"newton","schedulerProperties":[{"type":"custom","on":"5","at":"14:40 - 14:45"}],"createdAt":"5/11/2024, 2:36:27 pm","lastUpdatedAt":"5/11/2024, 2:38:22 pm","elementsArray":[{"label":"Vendor-wise Total Fleet Count","type":"chart","viqWrapper":{"depth":"%1","numIP":"1","viq":[{"UVName":"truck_master","filter":{"DATERANGE":{"START":"2024-01-01","END":"2024-12-01","HEAD":"SIMBAMASTER-04-TRCK__vds-created_Date"}},"Col1":{"disabled":"false","ColType":"Cat","Colname":"SIMBAMASTER-22_Transporter_vds-b_Name_vds-b_Alias","ColnameDE":"Transporter Name","UVName":"truck_master"},"yCol1":{"UVName":"truck_master","Colname":"CountDistinct SIMBAMASTER-04-TRCK_Truck_vds-b_Number","ColType":"Cont","ColnameDE":"Count Of Truck Number"}}],"feRecoWrapper":{"chartTitle":"Vendor-wise Total Fleet Count","complexity":"basic","reportdate":"2024-04-18 18:36:39","chartFormat":{"charttype":"Bar","flagtext":"2"},"showslicedicecomp":"1","sort":{"isDescending":"false","labelSort":"true","chSet":"0"}},"at":"eyJhbGciOiJIUzI1NiJ9.YjViZDllMjAtZTI2Zi00NDBmLTljY2ItNjI5NzU2ZDg5NGNi.dbBxaPw6BkkjPZTfvLNxh15C8DJUhk9P0LIo5GTrD9M","rt":"eyJhbGciOiJIUzI1NiJ9.MDY3ZmY1Y2EtMDgzOC00Yzk1LThmN2EtNjVhNTI2M2JlMmEx.rQZnRXPLNCMzYh--CJC7zPRqXGOoyZ2nh7tvJv0bk-k"},"id":"4","showPreview":"true","showAttachment":"false"}]},{"_id":"672a08849c2e291186f509d1","mis_id":"c2653ec3-a77f-402b-837f-92858ca5bb60","misName":"Testtimefrq","misDescription":"","username":"i-drishti@verdis.ai","emailProperties":{"to":["i-drishti@verdis.ai"],"subject":"test","mailContent":"test","mergeTable":"false"},"DSName":"newton","schedulerProperties":[{"type":"custom","on":"5","at":"02:50 - 02:55"}],"createdAt":"5/11/2024, 11:03:38 am","lastUpdatedAt":"5/11/2024, 5:29:00 pm","elementsArray":[{"label":"Vendor-wise Total Fleet Count","type":"chart","viqWrapper":{"depth":"%1","numIP":"1","viq":[{"UVName":"truck_master","filter":{"DATERANGE":{"START":"2024-01-01","END":"2024-12-01","HEAD":"SIMBAMASTER-04-TRCK__vds-created_Date"}},"Col1":{"disabled":"false","ColType":"Cat","Colname":"SIMBAMASTER-22_Transporter_vds-b_Name_vds-b_Alias","ColnameDE":"Transporter Name","UVName":"truck_master"},"yCol1":{"UVName":"truck_master","Colname":"CountDistinct SIMBAMASTER-04-TRCK_Truck_vds-b_Number","ColType":"Cont","ColnameDE":"Count Of Truck Number"}}],"feRecoWrapper":{"chartTitle":"Vendor-wise Total Fleet Count","complexity":"basic","reportdate":"2024-04-18 18:36:39","chartFormat":{"charttype":"Bar","flagtext":"2"},"showslicedicecomp":"1","sort":{"isDescending":"false","labelSort":"true","chSet":"0"}},"at":"eyJhbGciOiJIUzI1NiJ9.YjViZDllMjAtZTI2Zi00NDBmLTljY2ItNjI5NzU2ZDg5NGNi.dbBxaPw6BkkjPZTfvLNxh15C8DJUhk9P0LIo5GTrD9M","rt":"eyJhbGciOiJIUzI1NiJ9.MDY3ZmY1Y2EtMDgzOC00Yzk1LThmN2EtNjVhNTI2M2JlMmEx.rQZnRXPLNCMzYh--CJC7zPRqXGOoyZ2nh7tvJv0bk-k"},"id":"4","showPreview":"true","showAttachment":"false"}]},{"_id":"672b009e9c2e291186f50ac6","mis_id":"08808fec-36bd-4845-9dd7-cbb4bb22f9b3","misName":"Test06","misDescription":"","username":"i-drishti@verdis.ai","emailProperties":{"to":["i-drishti@verdis.ai","kamiya@verdis.ai","prashant@verdis.ai"],"subject":"test","mailContent":"test6","mergeTable":"false"},"DSName":"newton","schedulerProperties":[{"type":"custom","on":"6","at":"10:55 - 11:00"},{"type":"custom","on":"6","at":"11:10 - 11:15"}],"createdAt":"6/11/2024, 10:56:26 am","lastUpdatedAt":"6/11/2024, 11:07:34 am","elementsArray":[{"label":"Vendor-wise Total Fleet Count","type":"chart","viqWrapper":{"depth":"%1","numIP":"1","viq":[{"UVName":"truck_master","filter":{"DATERANGE":{"START":"2024-01-01","END":"2024-12-01","HEAD":"SIMBAMASTER-04-TRCK__vds-created_Date"}},"Col1":{"disabled":"false","ColType":"Cat","Colname":"SIMBAMASTER-22_Transporter_vds-b_Name_vds-b_Alias","ColnameDE":"Transporter Name","UVName":"truck_master"},"yCol1":{"UVName":"truck_master","Colname":"CountDistinct SIMBAMASTER-04-TRCK_Truck_vds-b_Number","ColType":"Cont","ColnameDE":"Count Of Truck Number"}}],"feRecoWrapper":{"chartTitle":"Vendor-wise Total Fleet Count","complexity":"basic","reportdate":"2024-04-18 18:36:39","chartFormat":{"charttype":"Bar","flagtext":"2"},"showslicedicecomp":"1","sort":{"isDescending":"false","labelSort":"true","chSet":"0"}},"at":"eyJhbGciOiJIUzI1NiJ9.YjViZDllMjAtZTI2Zi00NDBmLTljY2ItNjI5NzU2ZDg5NGNi.dbBxaPw6BkkjPZTfvLNxh15C8DJUhk9P0LIo5GTrD9M","rt":"eyJhbGciOiJIUzI1NiJ9.MDY3ZmY1Y2EtMDgzOC00Yzk1LThmN2EtNjVhNTI2M2JlMmEx.rQZnRXPLNCMzYh--CJC7zPRqXGOoyZ2nh7tvJv0bk-k"},"id":"4","showPreview":"true","showAttachment":"false"},{"label":"Manufacturing Year-wise Total Fleet Count","type":"chart","viqWrapper":{"depth":"%1","numIP":"1","viq":[{"UVName":"truck_master","filter":{"DATERANGE":{"START":"2024-01-01","END":"2024-12-01","HEAD":"SIMBAMASTER-04-TRCK__vds-created_Date"}},"Col1":{"disabled":"false","ColType":"Cat","Colname":"SIMBAMASTER-04-TRCK_Year_vds-b_of_vds-b_Manufacturing","ColnameDE":"Year of Manufacturing","UVName":"truck_master"},"yCol1":{"UVName":"truck_master","Colname":"CountDistinct SIMBAMASTER-04-TRCK_Truck_vds-b_Number","ColType":"Cont","ColnameDE":"Count Of Truck Number"}}],"feRecoWrapper":{"chartTitle":"Manufacturing Year-wise Total Fleet Count","complexity":"basic","reportdate":"2024-04-18 18:39:55","chartFormat":{"charttype":"Bar","flagtext":"1"},"showslicedicecomp":"1","sort":{"isDescending":"false","labelSort":"true","chSet":"0"}},"at":"eyJhbGciOiJIUzI1NiJ9.YjViZDllMjAtZTI2Zi00NDBmLTljY2ItNjI5NzU2ZDg5NGNi.dbBxaPw6BkkjPZTfvLNxh15C8DJUhk9P0LIo5GTrD9M","rt":"eyJhbGciOiJIUzI1NiJ9.MDY3ZmY1Y2EtMDgzOC00Yzk1LThmN2EtNjVhNTI2M2JlMmEx.rQZnRXPLNCMzYh--CJC7zPRqXGOoyZ2nh7tvJv0bk-k"},"id":"5","showPreview":"true","showAttachment":"false"}]},{"_id":"6738b4f03c8b46cb4aa51259","mis_id":"4a92d327-4432-4a3b-8082-d4ddd1303e0b","misName":"test16","misDescription":"","username":"i-drishti@verdis.ai","emailProperties":{"to":["i-drishti@verdis.ai"],"subject":"test16","mailContent":"test16","mergeTable":"false"},"DSName":"newton","schedulerProperties":[{"type":"custom","on":"16","at":"20:35 - 20:40"}],"createdAt":"16/11/2024, 8:36:24 pm","lastUpdatedAt":"16/11/2024, 8:36:24 pm","elementsArray":[{"label":"Aging-wise Total Fleet Count","type":"chart","viqWrapper":{"depth":"%1","numIP":"1","viq":[{"UVName":"truck_master","filter":{"DATERANGE":{"START":"2024-01-01","END":"2024-12-01","HEAD":"SIMBAMASTER-04-TRCK__vds-created_Date"}},"Col1":{"disabled":"false","ColType":"Cat","Colname":"SIMBAMASTER-04-TRCK_Ageing","ColnameDE":"Ageing","UVName":"truck_master"},"yCol1":{"UVName":"truck_master","Colname":"CountDistinct SIMBAMASTER-04-TRCK_Truck_vds-b_Number","ColType":"Cont","ColnameDE":"Count Of Truck Number"}}],"feRecoWrapper":{"chartTitle":"Aging-wise Total Fleet Count","complexity":"basic","reportdate":"2024-04-18 18:48:03","chartFormat":{"charttype":"Bar","flagtext":"1"},"showslicedicecomp":"1","sort":{"isDescending":"false","labelSort":"true","chSet":"0"}},"at":"eyJhbGciOiJIUzI1NiJ9.YjViZDllMjAtZTI2Zi00NDBmLTljY2ItNjI5NzU2ZDg5NGNi.dbBxaPw6BkkjPZTfvLNxh15C8DJUhk9P0LIo5GTrD9M","rt":"eyJhbGciOiJIUzI1NiJ9.MDY3ZmY1Y2EtMDgzOC00Yzk1LThmN2EtNjVhNTI2M2JlMmEx.rQZnRXPLNCMzYh--CJC7zPRqXGOoyZ2nh7tvJv0bk-k"},"id":"6","showPreview":"true","showAttachment":"false"}]},{"_id":"673b124c3c8b46cb4aa51540","mis_id":"38a48a61-df22-4522-a34b-4437d4eba88d","misName":"test05","misDescription":"","username":"i-drishti@verdis.ai","emailProperties":{"to":["i-drishti@verdis.ai"],"subject":"test","mailContent":"test","mergeTable":"false"},"DSName":"newton","schedulerProperties":[{"type":"custom","on":"4","at":"17:45 - 17:50"}],"createdAt":"4/11/2024, 5:42:59 pm","lastUpdatedAt":"18/11/2024, 3:39:16 pm","elementsArray":[{"label":"Aging-wise Total Fleet Count","type":"chart","viqWrapper":{"depth":"%1","numIP":"1","viq":[{"UVName":"truck_master","filter":{"DATERANGE":{"START":"2024-01-01","END":"2024-12-01","HEAD":"SIMBAMASTER-04-TRCK__vds-created_Date"}},"Col1":{"disabled":"false","ColType":"Cat","Colname":"SIMBAMASTER-04-TRCK_Ageing","ColnameDE":"Ageing","UVName":"truck_master"},"yCol1":{"UVName":"truck_master","Colname":"CountDistinct SIMBAMASTER-04-TRCK_Truck_vds-b_Number","ColType":"Cont","ColnameDE":"Count Of Truck Number"}}],"feRecoWrapper":{"chartTitle":"Aging-wise Total Fleet Count","complexity":"basic","reportdate":"2024-04-18 18:48:03","chartFormat":{"charttype":"Bar","flagtext":"1"},"showslicedicecomp":"1","sort":{"isDescending":"false","labelSort":"true","chSet":"0"}},"at":"eyJhbGciOiJIUzI1NiJ9.YjViZDllMjAtZTI2Zi00NDBmLTljY2ItNjI5NzU2ZDg5NGNi.dbBxaPw6BkkjPZTfvLNxh15C8DJUhk9P0LIo5GTrD9M","rt":"eyJhbGciOiJIUzI1NiJ9.MDY3ZmY1Y2EtMDgzOC00Yzk1LThmN2EtNjVhNTI2M2JlMmEx.rQZnRXPLNCMzYh--CJC7zPRqXGOoyZ2nh7tvJv0bk-k"},"id":"5","showPreview":"true","showAttachment":"false"},{"label":"Emission-wise Total Fleet Count","type":"chart","viqWrapper":{"depth":"%1","numIP":"1","viq":[{"UVName":"truck_master","filter":{"DATERANGE":{"START":"2024-01-01","END":"2024-12-01","HEAD":"SIMBAMASTER-04-TRCK__vds-created_Date"}},"Col1":{"UVName":"truck_master","Colname":"SIMBAMASTER-04-TRCK_Emission","ColType":"Cat","ColnameDE":"Fleet Type"},"yCol1":{"UVName":"truck_master","Colname":"CountDistinct SIMBAMASTER-04-TRCK_Truck_vds-b_Number","ColType":"Cont","ColnameDE":"Count Of Truck Number"}}],"feRecoWrapper":{"chartTitle":"Emission-wise Total Fleet Count","complexity":"basic","reportdate":"2024-04-18 18:51:01","chartFormat":{"charttype":"Bar","flagtext":"1"},"showslicedicecomp":"1"},"at":"eyJhbGciOiJIUzI1NiJ9.YjViZDllMjAtZTI2Zi00NDBmLTljY2ItNjI5NzU2ZDg5NGNi.dbBxaPw6BkkjPZTfvLNxh15C8DJUhk9P0LIo5GTrD9M","rt":"eyJhbGciOiJIUzI1NiJ9.MDY3ZmY1Y2EtMDgzOC00Yzk1LThmN2EtNjVhNTI2M2JlMmEx.rQZnRXPLNCMzYh--CJC7zPRqXGOoyZ2nh7tvJv0bk-k"},"id":"6","showPreview":"true","showAttachment":"false"}]},{"_id":"673ed4c23c8b46cb4aa519c8","mis_id":"8e457506-dbd6-41dd-b735-23a6f6533145","misName":"test18","misDescription":"test18","username":"i-drishti@verdis.ai","emailProperties":{"subject":"test18","mailContent":"test","to":["i-drishti@verdis.ai"]},"DSName":"newton","schedulerProperties":[{"at":"16:40 - 16:45","on":"18","type":"custom"}],"createdAt":"21/11/2024, 12:05:46 pm","lastUpdatedAt":"21/11/2024, 12:05:46 pm","elementsArray":null},{"_id":"673ed51b3c8b46cb4aa519ca","mis_id":"1668f1b3-966f-4920-902d-d2758ffce05c","misName":"test18","misDescription":"test18","username":"i-drishti@verdis.ai","emailProperties":{"subject":"test18","mailContent":"test","to":["i-drishti@verdis.ai"]},"DSName":"newton","schedulerProperties":[{"at":"16:40 - 16:45","on":"18","type":"custom"}],"createdAt":"21/11/2024, 12:07:15 pm","lastUpdatedAt":"21/11/2024, 12:07:15 pm","elementsArray":null},{"_id":"673ed6123c8b46cb4aa519ce","mis_id":"d82e2d2a-9996-4573-af90-e4021d98057b","misName":"test18","misDescription":"test18","username":"i-drishti@verdis.ai","emailProperties":{"subject":"test18","mailContent":"test","to":["i-drishti@verdis.ai"]},"DSName":"newton","schedulerProperties":[{"at":"16:40 - 16:45","on":"18","type":"custom"}],"createdAt":"21/11/2024, 12:11:22 pm","lastUpdatedAt":"21/11/2024, 12:11:22 pm","elementsArray":null},{"_id":"673ed6353c8b46cb4aa519d1","mis_id":"e5b5eb2d-aea7-423e-ada4-b0cde6a62f93","misName":"test18","misDescription":"test18","username":"i-drishti@verdis.ai","emailProperties":{"subject":"test18","mailContent":"test","to":["i-drishti@verdis.ai"]},"DSName":"newton","schedulerProperties":[{"at":"16:40 - 16:45","on":"18","type":"custom"}],"createdAt":"21/11/2024, 12:11:57 pm","lastUpdatedAt":"21/11/2024, 12:11:57 pm","elementsArray":null}]}
+Add Response: {"status":true}
+Update Response: {"status":false,"ecode":10,"einfo":"Error occured while updating record","_trid":"TRGW673ED679F0C2CF1D89A7B640"}
+Delete Response: {"status":true}
+]]></system-out>
+  </testcase>
+</testsuite>
