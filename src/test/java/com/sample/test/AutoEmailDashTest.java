@@ -61,7 +61,7 @@ public class AutoEmailDashTest {
                 .header("accept", "application/json, text/plain, */*")
                 .header("accept-language", "en-US,en;q=0.9")
                 .header("content-type", "application/x-www-form-urlencoded; charset=UTF-8")
-                .header("cookie", "x9218q34ghq0itv2ii=s%3Af1rs_d-8IBj4_H3bGXHSEm-Y6gK_Gbwq.vjerdTVOt4YZAAu5H%2BDr%2BnDh4Y5DAkEOOnMsXev77XQ; _dd_s=logs=1&id=197c028e-7c0f-4cc8-bec8-c3813f9ff48a&created=1732123320904&expire=1732126340705")
+                .header("cookie", "x9218q34ghq0itv2ii=s%3AcCuOrW55uT4K98zgMwrScXuWjQrAtbXI.hSHwRiTl9rYb2CLm4mi340rQ4%2FtUxWirQQxvQCbhqHQ; _dd_s=logs=1&id=45867018-4e77-41af-addd-3fc8c99cb07d&created=1732274268666&expire=1732275184653")
                 .header("origin", "https://containersqa.verdis.ai:8801")
                 .header("referer", "https://containersqa.verdis.ai:8801/")
                 .formParam("at", this.atToken) // Use dynamic Access Token (AT)
